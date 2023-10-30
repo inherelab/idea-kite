@@ -1,0 +1,32 @@
+
+groups:
+  - name: Group 1
+    desc: Group 1 description
+    commands:
+      - name: Command Name
+        command: echo hello
+        prompt: true
+  - name: Group 2
+    commands:
+      - name: Command 2-1
+        command: kite app info
+        prompt: true
+      - name: Command 2-2
+        command: kite app info
+        prompt: false
+  - name: Jenkins dev
+    commands:
+      - name: provider build
+        desc: dev provider build command
+        confirm: true
+        params:
+          - group:
+              type: string
+              default: java-group
+              tips: java-group, wzl, go-common
+          - branch:
+              type: string
+              default: qa
+        command: |
+          kite http tpl-send -d jenkins --api hook-build -e dev-provider --vv -v group=${group} -v branch=${branch} -v repoName=common-provider
+  

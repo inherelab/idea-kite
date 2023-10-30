@@ -1,0 +1,19 @@
+name: Dev kite
+groups:
+  - name: PHP Group
+    enable: true
+    enableOn: [phpstorm] # jetbrains products: phpstorm, goland, intellij
+    commands:
+      - name: Command Name
+        command: echo hello
+        prompt: true
+  - name: Java Group
+    enable: true
+    enableOn: [intellij]
+    commands:
+      - name: Command 2-1
+        command: kite app info
+        prompt: true
+      - name: Command 2-2
+        command: kite app info
+        prompt: false

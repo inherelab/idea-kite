@@ -1,13 +1,25 @@
-# idea-kite
+# dev-kite
 
 ![Build](https://github.com/inherelab/idea-kite/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
+`oh-my-kite` is a idea plugin.
+
+## Features
+
+**run commands:**
+
+- [ ] load and run extra commands, reload, init config
+- [ ] support command sort
+- [ ] add new command from idea
+- [ ] support edit config file
+
 ## Template ToDo list
+
 - [x] Create a new [IntelliJ Platform Plugin Template][template] project.
 - [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
+- [x] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
 - [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
 - [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
 - [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
@@ -36,9 +48,35 @@ To keep everything working, do not remove `<!-- ... -->` sections.
   Download the [latest release](https://github.com/inherelab/idea-kite/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
+## Usage
+
+JSON Config:
+
+```yaml
+version: '1'
+groups:
+  
+
+```
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
+
+## Refers
+
+use Java:
+
+* https://github.com/dploeger/idea.shellfilter
+* https://github.com/markiewb/idea-externaltools-runconfiguration-plugin
+
+use Kotlin:
+ 
+* https://github.com/ljg-7f/BashCmd
+* https://github.com/Vacxe/IntellijCliActions
+* https://github.com/t3hnar/CmdSupport
+* https://github.com/jasmine/IdeaJasmine
+* https://github.com/jansorg/BashSupport
+* https://github.com/AVeenstra/RunAnything
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
 [docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation

@@ -1,4 +1,4 @@
-package com.github.inhere.ideakite.toolWindow
+package com.github.inhere.ideakite.ui.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger

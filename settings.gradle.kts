@@ -1,1 +1,1 @@
-rootProject.name = "idea-kite"
+rootProject.name = "idea-dev-kite"

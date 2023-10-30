@@ -2,3 +2,4 @@
 .idea
 .qodana
 build
+/bash_cmd_plugin

@@ -34,7 +34,7 @@ repositories {
 // - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
 //    implementation(libs.annotations)
-    implementation("com.charleskorn.kaml:kaml-jvm:0.57.0")
+    implementation("com.charleskorn.kaml:kaml-jvm:0.58.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 }
